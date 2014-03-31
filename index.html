@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="ply : Function.prototype.apply wrappers" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>ply</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pluma/ply">View on GitHub</a>
+
+          <h1 id="project_title">ply</h1>
+          <h2 id="project_tagline">Function.prototype.apply wrappers</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pluma/ply/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pluma/ply/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="synopsis" class="anchor" href="#synopsis"><span class="octicon octicon-link"></span></a>Synopsis</h1>
+
+<p><strong>ply</strong> is a collection of wrappers around <code>Function.prototype.apply</code>.</p>
+
+<p><a href="http://nodejs.org/api/documentation.html#documentation_stability_index"><img src="http://b.repl.ca/v1/stability-5_--_locked-blue.png" alt="stability 5 - locked"></a> <a href="http://unlicense.org/"><img src="http://b.repl.ca/v1/license-Unlicense-lightgrey.png" alt="license - Unlicense"></a> <a href="https://flattr.com/submit/auto?user_id=pluma&amp;url=https://github.com/pluma/ply"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this"></a></p>
+
+<p><a href="https://ci.testling.com/pluma/ply"><img src="https://ci.testling.com/pluma/ply.png" alt="browser support"></a></p>
+
+<p><a href="https://travis-ci.org/pluma/ply"><img src="https://travis-ci.org/pluma/ply.png?branch=master" alt="Build Status"></a> <a href="https://coveralls.io/r/pluma/ply?branch=master"><img src="https://coveralls.io/repos/pluma/ply/badge.png?branch=master" alt="Coverage Status"></a> <a href="https://david-dm.org/pluma/ply"><img src="https://david-dm.org/pluma/ply.png?theme=shields.io" alt="Dependencies"></a></p>
+
+<h1>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h1>
+
+<p>It's trivial to implement, but in order to keep code DRY (and avoid silly mistakes) it makes sense to define this function only once per project. This library is the logical consequence of that.</p>
+
+<h1>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h1>
+
+<h2>
+<a name="nodejs" class="anchor" href="#nodejs"><span class="octicon octicon-link"></span></a>Node.js</h2>
+
+<h3>
+<a name="with-npm" class="anchor" href="#with-npm"><span class="octicon octicon-link"></span></a>With NPM</h3>
+
+<div class="highlight highlight-sh"><pre>npm install ply
+</pre></div>
+
+<h3>
+<a name="from-source" class="anchor" href="#from-source"><span class="octicon octicon-link"></span></a>From source</h3>
+
+<div class="highlight highlight-sh"><pre>git clone https://github.com/pluma/ply.git
+<span class="nb">cd </span>ply
+npm install
+make
+</pre></div>
+
+<h2>
+<a name="browser" class="anchor" href="#browser"><span class="octicon octicon-link"></span></a>Browser</h2>
+
+<h3>
+<a name="with-component" class="anchor" href="#with-component"><span class="octicon octicon-link"></span></a>With component</h3>
+
+<div class="highlight highlight-sh"><pre>component install pluma/ply
+</pre></div>
+
+<p><a href="https://github.com/component/component">Learn more about component</a>.</p>
+
+<h3>
+<a name="with-bower" class="anchor" href="#with-bower"><span class="octicon octicon-link"></span></a>With bower</h3>
+
+<div class="highlight highlight-sh"><pre>bower install ply
+</pre></div>
+
+<p><a href="https://github.com/twitter/bower">Learn more about bower</a>.</p>
+
+<h3>
+<a name="with-a-commonjs-module-loader" class="anchor" href="#with-a-commonjs-module-loader"><span class="octicon octicon-link"></span></a>With a CommonJS module loader</h3>
+
+<p>Download the <a href="https://raw.github.com/pluma/ply/master/dist/ply.min.js">latest minified CommonJS release</a> and add it to your project.</p>
+
+<p><a href="http://wiki.commonjs.org/wiki/Modules/1.1">Learn more about CommonJS modules</a>.</p>
+
+<h3>
+<a name="with-an-amd-module-loader" class="anchor" href="#with-an-amd-module-loader"><span class="octicon octicon-link"></span></a>With an AMD module loader</h3>
+
+<p>Download the <a href="https://raw.github.com/pluma/ply/master/dist/ply.amd.min.js">latest minified AMD release</a> and add it to your project.</p>
+
+<p><a href="http://requirejs.org/docs/whyamd.html">Learn more about AMD modules</a>.</p>
+
+<h3>
+<a name="as-a-standalone-library" class="anchor" href="#as-a-standalone-library"><span class="octicon octicon-link"></span></a>As a standalone library</h3>
+
+<p>Download the <a href="https://raw.github.com/pluma/ply/master/dist/ply.globals.min.js">latest minified standalone release</a> and add it to your project.</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/your/js/path/ply.globals.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>This makes the <code>ply</code> module available in the global namespace.</p>
+
+<h1>
+<a name="basic-usage-example" class="anchor" href="#basic-usage-example"><span class="octicon octicon-link"></span></a>Basic usage example</h1>
+
+<div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">mcall</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'ply'</span><span class="p">).</span><span class="nx">mcall</span><span class="p">;</span>
+
+<span class="nx">mcall</span><span class="p">(</span><span class="nx">console</span><span class="p">,</span> <span class="s1">'log'</span><span class="p">,</span> <span class="s1">'Hello'</span><span class="p">,</span> <span class="s1">'World'</span><span class="p">);</span> <span class="c1">// 'Hello' 'World'</span>
+</pre></div>
+
+<h1>
+<a name="api" class="anchor" href="#api"><span class="octicon octicon-link"></span></a>API</h1>
+
+<h2>
+<a name="applyfnfunction-selfobject-argsarray" class="anchor" href="#applyfnfunction-selfobject-argsarray"><span class="octicon octicon-link"></span></a>apply(fn:Function, self:Object, args:Array)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">self</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="callfnfunction-selfobject-args" class="anchor" href="#callfnfunction-selfobject-args"><span class="octicon octicon-link"></span></a>call(fn:Function, self:Object, args...)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">fn</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">self</span><span class="p">,</span> <span class="nx">args</span><span class="p">...);</span>
+</pre></div>
+
+<h2>
+<a name="fapplyfnfunction-argsarray" class="anchor" href="#fapplyfnfunction-argsarray"><span class="octicon octicon-link"></span></a>fapply(fn:Function, args:Array)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="fcallfnfunction-args" class="anchor" href="#fcallfnfunction-args"><span class="octicon octicon-link"></span></a>fcall(fn:Function, args...)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">fn</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">args</span><span class="p">...);</span>
+</pre></div>
+
+<h2>
+<a name="mapplyobjobject-namestring-argsarray" class="anchor" href="#mapplyobjobject-namestring-argsarray"><span class="octicon octicon-link"></span></a>mapply(obj:Object, name:String, args:Array)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">obj</span><span class="p">[</span><span class="nx">name</span><span class="p">].</span><span class="nx">apply</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="mcallobjobject-namestring-args" class="anchor" href="#mcallobjobject-namestring-args"><span class="octicon octicon-link"></span></a>mcall(obj:Object, name:String, args...)</h2>
+
+<p>Equivalent to the following:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">obj</span><span class="p">[</span><span class="nx">name</span><span class="p">].</span><span class="nx">call</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">args</span><span class="p">...);</span>
+</pre></div>
+
+<h1>
+<a name="unlicense" class="anchor" href="#unlicense"><span class="octicon octicon-link"></span></a>Unlicense</h1>
+
+<p>This is free and unencumbered public domain software. For more information, see <a href="http://unlicense.org/">http://unlicense.org/</a> or the accompanying <a href="https://github.com/pluma/ply/blob/master/UNLICENSE">UNLICENSE</a> file.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">ply maintained by <a href="https://github.com/pluma">pluma</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
