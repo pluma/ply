@@ -82,7 +82,7 @@ mcall(console, 'log', 'Hello', 'World'); // 'Hello' 'World'
 
 # API
 
-## apply(fn:Function, self:Object, args:Array):Function
+## apply(fn:Function, self:Object, args:Array)
 
 Equivalent to the following:
 
@@ -90,7 +90,7 @@ Equivalent to the following:
 fn.apply(self, args);
 ```
 
-## call(fn:Function, self:Object, args...):Function
+## call(fn:Function, self:Object, args...)
 
 Equivalent to the following:
 
@@ -98,7 +98,7 @@ Equivalent to the following:
 fn.call(self, args...);
 ```
 
-## fapply(fn:Function, args:Array):Function
+## fapply(fn:Function, args:Array)
 
 Equivalent to the following:
 
@@ -106,7 +106,7 @@ Equivalent to the following:
 fn.apply(this, args);
 ```
 
-## fcall(fn:Function, args...):Function
+## fcall(fn:Function, args...)
 
 Equivalent to the following:
 
@@ -114,7 +114,7 @@ Equivalent to the following:
 fn.call(this, args...);
 ```
 
-## mapply(obj:Object, name:String, args:Array):Function
+## mapply(obj:Object, name:String, args:Array)
 
 Equivalent to the following:
 
@@ -122,7 +122,7 @@ Equivalent to the following:
 obj[name].apply(obj, args);
 ```
 
-## mcall(obj:Object, name:String, args...):Function
+## mcall(obj:Object, name:String, args...)
 
 Equivalent to the following:
 
