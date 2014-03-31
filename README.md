@@ -2,12 +2,15 @@
 
 **ply** is a collection of wrappers around `Function.prototype.apply`.
 
-[![stability 5 - locked](http://b.repl.ca/v1/stability-5_--_locked-blue.png)
-](http://nodejs.org/api/documentation.html#documentation_stability_index) [![license - Unlicense](http://b.repl.ca/v1/license-Unlicense-lightgrey.png)](http://unlicense.org/) [![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=pluma&url=https://github.com/pluma/ply)
+[![stability 5 - locked](http://b.repl.ca/v1/stability-5_--_locked-blue.png)](http://nodejs.org/api/documentation.html#documentation_stability_index) [![license - Unlicense](http://b.repl.ca/v1/license-Unlicense-lightgrey.png)](http://unlicense.org/) [![Flattr this](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=pluma&url=https://github.com/pluma/ply)
 
 [![browser support](https://ci.testling.com/pluma/ply.png)](https://ci.testling.com/pluma/ply)
 
-[![Build Status](https://travis-ci.org/pluma/ply.png?branch=master)](https://travis-ci.org/pluma/ply) [![Coverage Status](https://coveralls.io/repos/pluma/ply/badge.png?branch=master)](https://coveralls.io/r/pluma/ply?branch=master) [![Dependencies](https://david-dm.org/pluma/ply.png?theme=shields.io)](https://david-dm.org/pluma/ply)
+[![Build Status](https://travis-ci.org/pluma/ply.png?branch=master)](https://travis-ci.org/pluma/ply) [![Coverage Status](https://coveralls.io/repos/pluma/ply/badge.png?branch=master)](https://coveralls.io/r/pluma/ply?branch=master) [![Code Climate](https://codeclimate.com/github/pluma/ply.png)](https://codeclimate.com/github/pluma/ply)
+
+[![NPM status](https://nodei.co/npm/ply.png?compact=true)](https://npmjs.org/package/ply)
+
+[![Dependencies](https://david-dm.org/pluma/ply.png?theme=shields.io)](https://david-dm.org/pluma/ply)
 
 # Why?
 
