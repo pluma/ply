@@ -1,0 +1,26 @@
+{
+  "name": "ply",
+  "repo": "pluma/ply",
+  "description": "Function.prototype.apply wrappers.",
+  "keywords": [
+    "function",
+    "apply",
+    "fapply",
+    "mapply",
+    "call",
+    "fcall",
+    "mcall"
+  ],
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": ["dist/ply.js"],
+  "main": "./dist/ply.js",
+  "ignore": [
+    "**/.*",
+    "build",
+    "components",
+    "node_modules"
+  ],
+  "license": "UNLICENSE"
+}

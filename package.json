@@ -1,0 +1,55 @@
+{
+  "name": "ply",
+  "version": "0.1.0",
+  "author": "Alan Plum <me@pluma.io>",
+  "description": "Function.prototype.apply wrappers.",
+  "licenses": {
+    "type": "UNLICENSE",
+    "url": "https://github.com/pluma/ply/blob/master/UNLICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluma/ply.git"
+  },
+  "keywords": [
+    "function",
+    "apply",
+    "fapply",
+    "mapply",
+    "call",
+    "fcall",
+    "mcall"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "~2.10",
+    "expect.js": "~0.3",
+    "istanbul": "~0.2",
+    "jshint": "~2.4",
+    "mocha": "~1.18",
+    "rewire": "~2.0",
+    "uglify-js": "~2.4"
+  },
+  "main": "./dist/ply.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "testling": {
+    "files": "spec/*.js",
+    "harness": "mocha",
+    "browsers": [
+      "chrome/latest",
+      "chrome/canary",
+      "firefox/3.6",
+      "firefox/latest",
+      "firefox/nightly",
+      "opera/10..latest",
+      "opera/next",
+      "safari/4..latest",
+      "ie/6..latest"
+    ]
+  }
+}
